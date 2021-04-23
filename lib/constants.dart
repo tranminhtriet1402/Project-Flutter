@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:shop_app/size_config.dart';
 
 const kPrimaryColor = Color(0xFFFF7643);
+const textColor=Color(0xFF000000);
+const buttonColor=Color(0xFF76FF03);
 const kPrimaryLightColor = Color(0xFFFFECDF);
 const kPrimaryGradientColor = LinearGradient(
   begin: Alignment.topLeft,

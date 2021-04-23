@@ -16,17 +16,17 @@ class _BodyState extends State<Body> {
   int currentPage = 0;
   List<Map<String, String>> splashData = [
     {
-      "text": "Welcome to Tokoto, Let’s shop!",
-      "image": "assets/images/splash_1.png"
+      "text": "Welcome to Shoes Store TTV, Let’s shop!",
+      "image": "assets/images/shoes-1.png"
     },
     {
       "text":
           "We help people conect with store \naround United State of America",
-      "image": "assets/images/splash_2.png"
+      "image": "assets/images/shoes-2.png"
     },
     {
       "text": "We show the easy way to shop. \nJust stay at home with us",
-      "image": "assets/images/splash_3.png"
+      "image": "assets/images/shoes-3.png"
     },
   ];
   @override
@@ -37,6 +37,7 @@ class _BodyState extends State<Body> {
         child: Column(
           children: <Widget>[
             Expanded(
+//              Set column, flex 3 => lấy 3
               flex: 3,
               child: PageView.builder(
                 onPageChanged: (value) {
@@ -91,7 +92,7 @@ class _BodyState extends State<Body> {
       height: 6,
       width: currentPage == index ? 20 : 6,
       decoration: BoxDecoration(
-        color: currentPage == index ? kPrimaryColor : Color(0xFFD8D8D8),
+        color: currentPage == index ? buttonColor : Color(0xFFD8D8D8),
         borderRadius: BorderRadius.circular(3),
       ),
     );
